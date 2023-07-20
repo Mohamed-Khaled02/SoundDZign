@@ -1,0 +1,82 @@
+.topics {
+  background: #181e1e;
+}
+
+.topics .wrapper {
+  position: relative;
+}
+
+.topics .wrapper .svgImage {
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+.topics .wrapper .topics-list {
+  padding-top: 110px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.topics .wrapper .topics-list .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.topics .wrapper .topics-list .studentImage,
+.topics .wrapper .topics-list .hrsImage {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0;
+}
+
+.item-title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0;
+}
+.item-p {
+  color: #fff;
+  font-family: Alegreya;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+/* tablet version */
+@media (max-width: 1040px) {
+  .item-title {
+    font-size: 32px;
+  }
+  .item-p {
+    font-size: 24px;
+  }
+}
+
+/* mopile version */
+@media (max-width: 750px) {
+  .topics .wrapper .topics-list {
+    padding-top: 90px;
+    flex-direction: column;
+  }
+
+  .topics .wrapper .svgImage {
+    position: absolute;
+    top: 60px;
+    left: 32px;
+  }
+
+  .item-title {
+    font-size: 32px;
+  }
+  .item-p {
+    font-size: 24px;
+  }
+}

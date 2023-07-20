@@ -1,0 +1,74 @@
+.Tesimonials {
+  background-color: var(--dark-color);
+  padding: 80px 0;
+}
+
+.Tesimonials h1 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 900;
+  position: relative;
+}
+
+.Tesimonials h1::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: var(--red-color);
+}
+
+.Tesimonials .Tesimonials-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Tesimonials .Tesimonials-list h3 {
+  color: #fff;
+  font-family: Alegreya;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 16px;
+  margin-bottom: 7px;
+}
+
+.Tesimonials .Tesimonials-list p {
+  width: 264px;
+  color: #fff;
+  font-family: Alegreya;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0;
+}
+
+/* tablet version */
+@media (max-width: 1040px) {
+  .Tesimonials .Tesimonials-list {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .Tesimonials .Tesimonials-list .persons {
+    display: flex;
+    gap: 28px;
+  }
+  .Tesimonials .Tesimonials-list p {
+    width: 100%;
+  }
+}
+
+/* mopile version */
+@media (max-width: 750px) {
+  .Tesimonials .Tesimonials-list .persons {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
